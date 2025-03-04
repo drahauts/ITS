@@ -1,0 +1,10 @@
+{"id":"sKybjgGlsJc1lzn","password":"WPA2","protocollo":"dmn3LQ8Yho7AT%H5YFiH7","frequenza":3.497783993991308E9}
+{"id":"fgZMosU3JT3Xl2os","password":"WEP","protocollo":"?j7bM0KfllPE0uqsp%gxIV?","frequenza":2.834893769539144E9}
+{"id":"9WpHTHAN6W1zvne","password":"WPA","protocollo":"i6%7uQf$-k1-Sb6|","frequenza":4.571479609572485E9}
+{"id":"ABrisJUNBSXpTShAUVi","password":"WPA","protocollo":"rISNkmte3GIk!KV","frequenza":2.585742260380419E9}
+{"id":"cZoQSavSKkVf7e9Kb7HCoSg","password":"WPA2","protocollo":"39b7d0e:hFjZxqVt:0oDi","frequenza":3.029382386588804E9}
+{"id":"QRUxCQuaP9XoriJksPYVIAxF","password":"WEP","protocollo":"sTuMqMUzBvZ3odnr0Fb3","frequenza":2.263516303889465E9}
+{"id":"HHyIHFIqaxjGokw97ZPSG","password":"WEP","protocollo":"Gv7A0?95JYE3v","frequenza":3.196047388912625E9}
+{"id":"LwSoiLkwXL9P","password":"WPA","protocollo":"d$Ao:4$|NGP6.7X?|-rum","frequenza":2.826381351082844E9}
+{"id":"Q0DXJsCUJXAH6","password":"WPA2","protocollo":"9b27w5!y-A$FN?k","frequenza":4.020885642277909E9}
+{"id":"2noQe3uNdBEisWlxOZ","password":"WPA","protocollo":"l82ZpUJW1tMw.a:gOh","frequenza":1.556953802669368E9}
