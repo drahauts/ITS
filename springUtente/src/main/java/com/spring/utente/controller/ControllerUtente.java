@@ -26,7 +26,7 @@ public class ControllerUtente {
 	@Autowired
 	private UtenteService service;
 	
-	@GetMapping(path="/registra", consumes = "application/json")
+	@PostMapping(path="", consumes = "application/json")
 	public boolean registra(@RequestBody UtenteDTO dto) {
 //		System.out.println("Ho registrato l'utente: " + utente);
 //		return true;
@@ -35,7 +35,7 @@ public class ControllerUtente {
 	}
 	
 	
-	@GetMapping(path="/cerca/{id}", produces = "application/json")
+	@GetMapping(path="/{id}", produces = "application/json")
 	public UtenteDTO cercaPerId(@PathVariable int id) {
 		//return new Utente(id, "Mario", "Rossi", "mrossi", "mrossi01");
 		
@@ -43,18 +43,17 @@ public class ControllerUtente {
 	}
 	
 	
-//	@GetMapping(path="/mostraTutti", produces = "application/json")
-//	public List<UtenteDTO> mostratutti(){
-////		ArrayList<Utente> lista = new ArrayList<>();
-////		lista.add(new Utente(10, "Mario", "Rossi", "rossim", "red"));
-////		lista.add(new Utente(11, "Angelo", "Bianchi", "abianchi", "bho"));
-////		lista.add(new Utente(12, "angela", "Rossa", "rossim", "red"));
-////		lista.add(new Utente(13, "mario", "Rossi", "rossim", "red"));
-////		
-////		
-////		return lista;
-//		return service.mostraTutti();
-//	}
+	@GetMapping(path="/", produces = "application/json")
+	public List<UtenteDTO> mostratutti(){
+
+		return service.mostraTutti();
+	}
+
+	@PatchMapping(path="/{idUtente}", produces ="application/json")
+	public UtenteDTO modificaPassword(@PathVariable int idUtente, String password){
+		return service.updatePassword(idUtente, password);
+	}
+
 	
 	@GetMapping(path="/nomeCognome/{id}", produces ="application/json")
 	public NomeCognomeDTO getNomeCognome(@PathVariable int id) {
@@ -62,7 +61,7 @@ public class ControllerUtente {
 	}
 	
 	
-	@DeleteMapping(path="/elimina/{id}")
+	@DeleteMapping(path="/{id}")
 	public boolean elimina(@PathVariable int id) {
 		return service.eliminaPerId(id);
 	}
