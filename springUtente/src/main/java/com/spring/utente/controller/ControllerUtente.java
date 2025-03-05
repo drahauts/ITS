@@ -55,7 +55,7 @@ public class ControllerUtente {
 	}
 
 	
-	@GetMapping(path="/nomeCognome/{id}", produces ="application/json")
+	@GetMapping(path="/{id}/nomeCognome", produces ="application/json")
 	public NomeCognomeDTO getNomeCognome(@PathVariable int id) {
 		return service.getNomeCognome(id);
 	}
